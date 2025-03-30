@@ -3,69 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVOFUN GAME</title>
+    <title>Before Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="src/output.css" rel="stylesheet">
+    <link href="/milestone-2-donyputraperkasa/src/output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen max-w-100%">
     <!-- bagian header -->
     <header>
         <div class="w-full" style="background-color: #6bceff">
-            <div class="flex justify-between px-[28px] py-[8px] items-center">
+            <div class="flex justify-center px-[28px] py-[8px]">
                 <img src="/milestone-2-donyputraperkasa/image/revouFunBlue.png" class="mx-10 w-50" alt="revouFun">
-                <button id="open-button" class="lg:hidden px-3" onclick="openSidebar()">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <ul class="max-lg:hidden flex space-x-10 text-white font-semibold">
-                    <li>home</li>
-                    <li>about</li>
-                    <li>game 1</li>
-                    <li>game 2</li>
-                    <li>login</li>
-                </ul>
             </div>
         </div>
     </header>
 
-    <!-- bagian sidebar -->
-    <div id="sidebar" class="bg-white w-[240px] h-screen fixed top p-8 shadow-xl ml-[-100%] transition-[margin-left] duration-300 ease-in-out">
+    <!-- bagian about me -->
+    <main class="container px-[16px] lg:flex lg:gap-4 mx-auto py-40">
+        <!-- kiri -->
+        <div class="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <h2 class="font-bold text-2xl mb-5">about dony putra perkasa</h2>
+            <p>hello, i say to you WELLCOME TO MY WEBSITE. now you will be know more about me (dony putra perkasa)</p>
+            <div class="flex gap-2">
+                <img src="/milestone-2-donyputraperkasa/image/aku.jpg" alt="dony putra perkasa" width="160" height="200"> </p>
+            </div>
 
-        <button id="close-button" class="absolute top-4 right-4" onclick="closeSidebar()">
-            <i class="fa-solid fa-close absolute top-4 right-4"></i>
-        </button>
-        <nav>
-            <ul >
-                <!-- <a href="/milestone-1-donyputraperkasa/index.html"><img src="/milestone-1-donyputraperkasa/image/mulaidariNOL.png" width="100px" alt=""></a> -->
-                <br> <br>
-                <li class="py-2"><a href="#">home</a></li>
-                <li class="py-2"><a href="#">about</a></li>
-                <li  class="py-2"><a href="#">game 1</a></li>
-                <li  class="py-2"><a href="#">game 2</a></li>
-                <li  class="py-2"><a href="#">login</a></li>
-            </ul>
-        </nav>
-    </div>
-  
-    <!-- bagian main -->
-    <main>
-        <div>
-            <h3>wellcome to</h3>
-            <img src="#">
+            <div class="gap-2">
+                <h2 class="font-bold text-2xl">Education</h2>
+                <ul class="list-disc list-inside m-3">
+                    <li>SD Kanisius</li>
+                    <li>SMP Negeri 2 Yogyakarta</li>
+                    <li>SMA Negeri 6 Yogyakarta</li>
+                    <li>S1 Matematika Universitas Gadjah Mada Yogyakarta</li>
+                </ul>
+            </div>
+
+            <div class="gap-2">
+                <h2 class="font-bold text-2xl">Contact</h2>
+                <ul class="list-disc list-inside m-3">
+                        <li><i class="fa-solid fa-phone"></i>  08223634****</li>
+                        <li><i class="fa-solid fa-envelope"></i>  donyputraperkasa@gmail.com</li>
+                        <li><i class="fa-solid fa-house"></i>  Bantul, Yogyakarta</li>
+                        <li><i class="fa-brands fa-instagram"></i>   donyputraperkasa</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>avaliable on</h3>
-            <p>logo android</p>
-            <p>logo ios</p>
-            <p>logo windows</p>
+
+        <!-- tengah -->
+        <div class="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <h2 class="font-bold text-2xl mb-5">work experience</h2>
+            <p> After graduate from univercity, i get first job in digital printing company in Jogjakarta at 2019. i will get 4 years experience until the end ofcovid 19 ended. and then i will be find my experience to work in Yayasan BOPKRI until now.</p>
+        </div>
+
+        <!-- kanan -->
+        <div class="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <h2 class="font-bold text-2xl mb-5">hobbies</h2>
+            <p>now i can tell you about my hobbies</p>
+            <li> Reading. every morning after wake up, i will be read the  news. i can do it since i studied in univercity</li>
+            <li>Listen Music. for this hobbies started when i 15th years old. And my favorite sing i give you link to hear</li>
         </div>
     </main>
     
-    <!-- bagian section -->
-    <section>
-        <a href="#">play store</a>
-        <a href="#">app store</a>
-        <a href="#">windows</a>
-    </section>
+    <!-- bagian login -->
+    <main class="container px-[16px] py-40 mx-auto">
+        <div class="bg-white shadow-xl rounded-xl m-3 p-3 mx-auto lg:w-[30%] flex flex-col justify-center items-center">
+            <div>
+             <p class="text-xl font-bold">please sign in to acces full website</p>
+            </div> 
+            <form class="m-3 p-3 border border-gray-300 flex flex-col w-96" action="backend.com" method="POST">
+                 <input type="text" id="nama" placeholder="input username" class="p-3 m-3 border">
+                 <input type="password" id="pass" placeholder="input password" class="p-3 m-3 border">
+            </form>
+            <div class="flex justify-center items-center">
+                <button type="submit" class="hover:bg-blue-700 bg-blue-500 text-white p-3 m-3 w-20 rounded-lg"><a href="/milestone-2-donyputraperkasa/afterLogin/index.html">login</a></button>
+                <button type="reset" class="hover:bg-blue-700 bg-blue-500 text-white p-3 m-3 w-20 rounded-lg">reset</button>
+            </div>
+        </div>
+    </main>
 
     <!-- bagian footer -->
     <footer class="mt-auto py-5" style="background-color: #6bceff">
@@ -92,15 +105,7 @@
         </section>
     </footer>
 
-    <!-- bagian script sidebar -->
-    <script>
-        function openSidebar() {
-         document.getElementById("sidebar").classList.remove("ml-[-100%]");
-        }
- 
-        function closeSidebar() {
-         document.getElementById("sidebar").classList.add("ml-[-100%]");
-        }
-     </script>
+    <!-- bagian script before login -->
+    <script src="/milestone-2-donyputraperkasa/beforelogin.js"></script>
 </body>
 </html>
