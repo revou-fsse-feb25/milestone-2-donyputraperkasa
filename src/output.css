@@ -1523,8 +1523,8 @@
   .align-top {
     vertical-align: top;
   }
-  .font-\[\]16px\] {
-    font-family: ]16px;
+  .font-\[16px\] {
+    font-family: 16px;
   }
   .text-2xl {
     font-size: var(--text-2xl);
