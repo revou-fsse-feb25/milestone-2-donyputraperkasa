@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Scissor Paper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="/milestone-2-donyputraperkasa/src/output.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Rock Scissor Paper</h1>
+<body class="flex flex-col min-h-screen max-w-100%">
+    <!-- bagian header -->
+    <header>
+        <div class="w-full" style="background-color: #6bceff">
+            <div class="flex justify-between px-[28px] py-[8px] items-center">
+                <img src="/milestone-2-donyputraperkasa/image/revouFunBlue.png" class="mx-10 w-50" alt="revouFun">
+                <button id="open-button" class="lg:hidden px-3" onclick="openSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="max-lg:hidden flex space-x-10 font-semibold">
+                    <li><a href="/milestone-2-donyputraperkasa/afterLogin/index.html">home</a></li>
+                    <li><a href="/milestone-2-donyputraperkasa/rockScissorPaper/index.html" class="bg-white rounded-lg p-2">rock scissor paper</a></li>
+                    <li><a href="/milestone-2-donyputraperkasa/numberGuessing/index.html">Number Guessing</a></li>
+                    <li><a href="/milestone-2-donyputraperkasa/clickerGame/index.html">Clicker Game</a></li>
+                    <li><a href="/milestone-2-donyputraperkasa/calculatorMath/index.html">calculator math</a></li>
+                    <li><a href="/milestone-2-donyputraperkasa/index.html">logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- bagian sidebar -->
+    <div id="sidebar" class="bg-white w-[240px] h-screen fixed top p-8 shadow-xl ml-[-100%] transition-[margin-left] duration-300 ease-in-out">
+
+        <button id="close-button" class="absolute top-4 right-4" onclick="closeSidebar()">
+            <i class="fa-solid fa-close absolute top-4 right-4"></i>
+        </button>
+        <nav>
+            <ul >
+                <li class="py-2"><a href="/milestone-2-donyputraperkasa/afterLogin/index.html">home</a></li>
+                <li class="py-2 bg-gray-500 text-white rounded-lg p-2"><a href="/milestone-2-donyputraperkasa/rockScissorPaper/index.html">rock scissor paper</a></li>
+                <li class="py-2"><a href="/milestone-2-donyputraperkasa/numberGuessing/index.html">Number Guessing</a></li>
+                <li class="py-2"><a href="/milestone-2-donyputraperkasa/clickerGame/index.html">Clicker Game</a></li>
+                <li class="py-2"><a href="/milestone-2-donyputraperkasa/calculatorMath/index.html">calculator math</a></li>
+                <li class="py-2"><a href="#/milestone-2-donyputraperkasa/index.html">logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+  
+    <!-- bagian content -->
+    <main>
+    </main>
+
+    <!-- bagian footer -->
+    <footer class="mt-auto py-5" style="background-color: #6bceff">
+        <section class="text-align max-w-[1200px] mx-auto">
+            <div class="container mx-auto lg:flex">
+                <img src="/milestone-2-donyputraperkasa/image/revouFunBlue.png" class="container lg:w-150 mx-auto w-80 p-4 lg:p-12" alt="revouFun">
+                <p class="container m-4 p-4 lg:w-150 lg:p-12 text-white">You have been hired as a web developer for a new gaming company named RevoFun
+                looking to establish an online presence. Your task is to create a landing page that not
+                    only introduces the company but also provides access to various simple JavaScript
+                    games. This project is your chance to showcase your JavaScript skills while delivering
+                    an engaging user experience.
+                </p>
+            </div>
+            
+            <div class="container mx-auto lg:text-center">
+                <p class="font-semibold text-2xl p-12">social media</p>
+                <div class="flex flex-col lg:flex-row justify-center gap-5">
+                    <i class="fa-brands fa-github mx-5 p-5"></i>
+                    <i class="fa-brands fa-instagram mx-5 p-5"></i>
+                    <i class="fa-brands fa-whatsapp mx-5 p-5"></i>
+                    <i class="fa-brands fa-linkedin mx-5 p-5"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- bagian script sidebar -->
+    <script src="/milestone-2-donyputraperkasa/afterLogin/afterLogin.js"></script>
 </body>
 </html>
