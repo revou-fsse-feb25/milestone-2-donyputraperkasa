@@ -34,3 +34,9 @@ function determineWinner(aku, komp) {
 Kertas.addEventListener('click', () => mulaiGame('kertas'));
 Batu.addEventListener('click', () => mulaiGame('batu'));
 Gunting.addEventListener('click', () => mulaiGame('gunting'));
+
+function mulaiGame(playerChoice) {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(playerChoice, computerChoice);
+    alert(`aku =  ${playerChoice}\nKomputer = ${computerChoice}\nhasil = ${result}`);
+}
