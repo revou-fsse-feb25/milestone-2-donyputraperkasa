@@ -45,11 +45,44 @@
             </ul>
         </nav>
     </div>
-    </div>
   
     <!-- bagian content -->
     <main>
-        <p>calculator math</p>
+        <div class="container">
+            <h1>Calculator Math</h1>
+        </div>
+    
+        <div class="container row justify-content-center py-5">
+            <div class="col-2">
+                <div class="input-group">
+                    <input id="aritmatikaAngka1" type="text" class="form-control" placeholder="angka 1" aria-label="angka 1">
+                </div>
+            </div>
+    
+            <div class="col-2">
+                <div class="input-group">
+                    <select id="operatorAritmatika" class="form-select">
+                        <option selected>pilih operator</option>
+                        <option value="+"> + </option>
+                        <option value="-"> - </option>
+                        <option value="/"> / </option>
+                        <option value="*"> x </option>
+                        <option value="%"> mod </option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="col-2">
+                <div class="input-group">
+                    <input id="aritmatikaAngka2" type="text" class="form-control" placeholder="angka 2" aria-label="angka 2">
+                </div>
+            </div>
+    
+            <div class="col-3">
+                <button type="button" class="btn btn-primary" id="buttonAritmatika">hasil</button>
+                <span class="mx-5" id="hasilOperatorAritmatika">hasilnya</span>
+            </div>
+        </div>
     </main>
 
     <!-- bagian footer -->
@@ -81,6 +114,6 @@
     </footer>
 
     <!-- bagian script sidebar -->
-    <script src="/milestone-2-donyputraperkasa/afterLogin/afterLogin.js"></script>
+    <script src="/milestone-2-donyputraperkasa/calculatorMath/calculatorMath.js"></script>
 </body>
 </html>
