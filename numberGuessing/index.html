@@ -47,16 +47,34 @@
     </div>
   
     <!-- bagian content -->
-    <main>
-        <h1> tebak angka </h1>
-        <h2></h2>
-    
-        <h3>silahkan tebak angkanya</h3>
-        <p id="angkaKomp"></p>
-        <input type="text" id="angkaMu" placeholder="masukan angka">
-        <br><br>
-        <button type="button" id="cekAngka" onclick="cekAngka()">cek angka</button>
-        <p id="hasilnya"></p>
+    <main  class="max-w-lg mx-auto">
+        <div class="py-5">
+            <img src="/milestone-2-donyputraperkasa/image/numberGuessing.png"  class="mx-auto max-w-[700px]" style="width: 700px !important;" alt="revouFun">
+        </div>
+
+        <div class ="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <div class="py-5">
+                <h1>silahkan tebak angkanya</h1>
+            </div>
+
+            <div>
+                <p id="angkaKomp"></p>
+                <input type="text" id="angkaMu" placeholder="masukan angka">
+                <br><br>
+                <button type="button" class="hover:bg-blue-700 bg-blue-500 text-white p-3 m-3 w-20 rounded-lg" id="cekAngka" onclick="cekAngka()">cek angka</button>
+                <p id="hasilnya"></p>
+            </div>
+        </div>
+        
+        <div class ="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <h2 class="text-center font-bold">Rules to play</h2>
+            <ul class="list-disc px-5" style="padding-left: 30px !important;">
+                <li>choice one number between 1 - 100</li>
+                <li>after you choice, you will be get a attention random number</li>
+                <li>try again to choice number until your number same with number guessing</li>
+                <li>happy enjoy :D </li>
+            </ul>
+        </div>
     </main>
 
     <!-- bagian footer -->
@@ -88,6 +106,6 @@
     </footer>
 
     <!-- bagian script sidebar -->
-    <script src="/milestone-2-donyputraperkasa/afterLogin/afterLogin.js"></script>
+    <script src="/milestone-2-donyputraperkasa/numberGuessing/numberGuessing.js"></script>
 </body>
 </html>
