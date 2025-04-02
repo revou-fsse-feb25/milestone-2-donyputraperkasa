@@ -47,22 +47,33 @@
     </div>
   
     <!-- bagian content -->
-    <main>
-        <h1>memori game</h1>
-    <p>
-        waktu tersisa : <span id="timer">0</span> detik
-    </p>
-    <section>
-        <div class="main">
-            <div class="left">
-                <h3> skor game : <span id="gameCost">0</span></h3>
-                <img src="/milestone-2-donyputraperkasa/image/revouFun.png" alt="" id="gambar" onclick="hasilSkor()">
+    <main class="max-w-lg mx-auto">
+        <div class="py-5">
+            <img src="/milestone-2-donyputraperkasa/image/clickerGame.png" class="mx-auto max-w-[700px]" style="width: 700px !important;" alt="revouFun">
+        </div>
+
+        <div class ="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <div>
+                <h1 class="text-center font-bold">waktu tersisa : <span id="timer">0</span> detik</h1>
             </div>
-            <div class="right">
-               right
+
+            <div class="flex justify-center">
+                <div class="main">
+                    <h3> skor game : <span id="gameCost">0</span></h3>
+                    <img src="/milestone-2-donyputraperkasa/image/cat.png" class="mx-auto max-w-[700px]" style="width: 700px !important;" alt="" id="gambar" onclick="hasilSkor()">
+                </div>
             </div>
         </div>
-    </section>
+
+        <div class ="shadow-md rounded-xl bg-white px-[16px] py-[24px] m-4 max-w-lg mx-auto">
+            <h2 class="text-center font-bold">Rules to play</h2>
+            <ul class="list-disc px-5" style="padding-left: 30px !important;">
+                <li>click this cat for 10 second</li>
+                <li>click until times out</li>
+                <li>aafter times out, you will get your point</li>
+                <li>happy enjoy :D</li>
+            </ul>
+        </div>
     </main>
 
     <!-- bagian footer -->
@@ -94,6 +105,6 @@
     </footer>
 
     <!-- bagian script sidebar -->
-    <script src="/milestone-2-donyputraperkasa/afterLogin/afterLogin.js"></script>
+    <script src="/milestone-2-donyputraperkasa/clickerGame/clickerGame.js"></script>
 </body>
 </html>
