@@ -8,20 +8,13 @@ function openSidebar() {
    }
 
 // bagian calculator
-let aritmatikaAngka1, operatorAritmatika, aritmatikaAngka2, hasilOperatorAritmatika;
+let angka1, angka2, operator, hasil;
+document.getElementById(`button`).onclick = function(){
+    angka1 = document.getElementById(`angka1`).value;
+    angka2 = document.getElementById(`angka2`).value;
+    operator = document.getElementById(`operator`).value;
 
-document.getElementById('buttonAritmatika').onclick = function (){
-    // bagian input
-    aritmatikaAngka1 = document.getElementById(`aritmatikaAngka1`).value;
-    aritmatikaAngka2 = document.getElementById(`aritmatikaAngka2`).value;
-    operatorAritmatika = document.getElementById(`operatorAritmatika`).value;
-    console.log(aritmatikaAngka1);
-    console.log(aritmatikaAngka2);
-    console.log(operatorAritmatika);
-
-    // bagian operasinya
-    hasilOperatorAritmatika = eval(aritmatikaAngka1 + operatorAritmatika + aritmatikaAngka2);
-
-    // bagian oputput
-    document.getElementById("hasilOperatorAritmatika").textContent = hasilOperatorAritmatika;
-}; 
+    hasil = eval(angka1 + operator + angka2);
+    document.getElementById("hasil").textContent = hasil;
+    // alert(hasil)
+};
