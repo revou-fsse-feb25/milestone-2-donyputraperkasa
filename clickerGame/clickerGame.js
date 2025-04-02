@@ -34,5 +34,5 @@ function restart() {
     clearInterval(timer);
     timer = null;
     sisaWaktu = waktuAwal;
-    document.getElementById("timer").innerText = sisaWaktu;
+    skor.innerHTML = 0;
 }
