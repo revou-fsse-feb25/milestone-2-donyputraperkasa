@@ -8,18 +8,31 @@ function openSidebar() {
    }
 
 // bagian klik game
+let timer;
+let waktuAwal = 10;
+let sisaWaktu = waktuAwal;
 let skor = document.getElementById("gameCost");
+
 function hasilSkor(){
     skor.innerHTML = parseFloat(skor.innerHTML) + 1;
 }
-const timerSpan = document.getElementById("timer");
-function countdown(seconds){
-    const timerInterval = setInterval(function(){
-        if (seconds >= 0){timerSpan.innerHTML = seconds--;
+
+function play() {
+    if (timer) return; // Hindari duplikasi interval
+    timer = setInterval(() => {
+        if (sisaWaktu > 0) {
+            sisaWaktu--;
+            document.getElementById("timer").innerText = sisaWaktu;
         } else {
-            clearInterval(timerInterval);
-            alert("waktu habis\nskor anda = " + skor.innerHTML);
+            clearInterval(timer);
+            alert("waktu habis \n skor anda = " + skor.innerHTML)
         }
-    }, 1000)
+    }, 1000);
 }
-countdown(10);
+
+function restart() {
+    clearInterval(timer);
+    timer = null;
+    sisaWaktu = waktuAwal;
+    document.getElementById("timer").innerText = sisaWaktu;
+}
