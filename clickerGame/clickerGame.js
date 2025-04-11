@@ -18,14 +18,14 @@ function hasilSkor(){
 }
 
 function play() {
-    if (timer) return; // Hindari duplikasi interval
+    if (timer) return;
     timer = setInterval(() => {
         if (sisaWaktu > 0) {
             sisaWaktu--;
             document.getElementById("timer").innerText = sisaWaktu;
         } else {
             clearInterval(timer);
-            alert("waktu habis \n skor anda = " + skor.innerHTML)
+            alert("yaahhh waktu habis \n skor anda = " + skor.innerHTML)
         }
     }, 1000);
 }
