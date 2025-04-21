@@ -1,8 +1,23 @@
-const nama = document.getElementById("nama");
-const pass = document.getElementById("pass");
-const login = document.getElementById("login");
-const welcome = document.querySelector("h2");
+// const nama = document.getElementById("nama");
+// const pass = document.getElementById("pass");
 
-function pesan(){
-    alert("selamat datang " + nama.value);
+// // function pesan(){
+// //     alert("selamat datang " + nama.value);
+// // }
+function login() {
+    const nama = document.getElementById("nama").value;
+    const pass = document.getElementById("pass").value;
+    if (nama === pass){
+        window.location.href = "coba2.html";
+        alert("selamat datang " + username);
+    } else if (nama === "" || pass === "") {
+        alert("username atau password tidak boleh kosong");
+    } else if (nama !== pass) {
+        alert("username dan password berbeda");
+    }
+}
+
+function reset() {
+    document.getElementById("nama").value = "";
+    document.getElementById("pass").value = "";
 }
