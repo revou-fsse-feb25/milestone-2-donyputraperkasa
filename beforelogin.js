@@ -8,7 +8,7 @@ function login() {
     const nama = document.getElementById("nama").value;
     const pass = document.getElementById("pass").value;
     if (nama === pass){
-        window.location.href = "coba2.html";
+        window.location.href = "/milestone-2-donyputraperkasa/afterLogin/index.html";
         alert("selamat datang " + username);
     } else if (nama === "" || pass === "") {
         alert("username atau password tidak boleh kosong");
