@@ -44,12 +44,12 @@ function mulaiGame(player) {
     const leaderboard = document.getElementById("leaderboard");
     const baris = document.createElement("tr");
     baris.innerHTML =`
-        <td>${pertandingan}</td>
-        <td>${player}</td>
-        <td>${computer}</td>
-        <td>${skor}</td>
+        <td class="border p-2 text-center">${pertandingan}</td>
+        <td class="border p-2 text-center">${player}</td>
+        <td class="border p-2 text-center">${computer}</td>
+        <td class="border p-2 text-center">${skor}</td>
         `;
     leaderboard.appendChild(baris);
     // alert(`aku =  ${playerChoice}\nKomputer = ${computerChoice}\nhasil = ${result}`);
-    document.getElementById("hasilnya").textContent="hasilnya" + skor;
+    document.getElementById("hasilnya").textContent="hasilnya : " + skor;
 }
