@@ -25,10 +25,24 @@ function play() {
             document.getElementById("timer").innerText = sisaWaktu;
         } else {
             clearInterval(timer);
-            alert("yaahhh waktu habis \n skor anda = " + skor.innerHTML)
+            // alert("yaahhh waktu habis \n skor anda = " + skor.innerHTML)
+            document.getElementById("hasilnya").innerHTML = "yaahhh waktu habis \n skor anda = " + skor.innerHTML;
+            saveScore();
         }
     }, 1000);
 }
+
+function saveScore() {
+    let score = skor.innerHTML;
+    const leaderboard = document.getElementById("leaderboard");
+    const baris = document.createElement("tr");
+    nomor++;
+    baris.innerHTML = `
+    <td class="border p-2 text-center"> ${nomor} </td>
+    <td class="border p-2 text-center">${score}</td>
+    `;
+    leaderboard.appendChild(baris);
+  }
 
 function restart() {
     clearInterval(timer);
