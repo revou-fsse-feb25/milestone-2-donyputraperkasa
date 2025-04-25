@@ -35,8 +35,21 @@ Kertas.addEventListener('click', () => mulaiGame('kertas'));
 Batu.addEventListener('click', () => mulaiGame('batu'));
 Gunting.addEventListener('click', () => mulaiGame('gunting'));
 
-function mulaiGame(playerChoice) {
-    const computerChoice = getComputerChoice();
-    const result = determineWinner(playerChoice, computerChoice);
-    alert(`aku =  ${playerChoice}\nKomputer = ${computerChoice}\nhasil = ${result}`);
+let pertandingan = 0;
+let skor = 0;
+function mulaiGame(player) {
+    const computer = getComputerChoice();
+    const skor = determineWinner(player, computer);
+    pertandingan++;
+    const leaderboard = document.getElementById("leaderboard");
+    const baris = document.createElement("tr");
+    baris.innerHTML =`
+        <td>${pertandingan}</td>
+        <td>${player}</td>
+        <td>${computer}</td>
+        <td>${skor}</td>
+        `;
+    leaderboard.appendChild(baris);
+    // alert(`aku =  ${playerChoice}\nKomputer = ${computerChoice}\nhasil = ${result}`);
 }
+document.getElementById("hasilnya").textContent="hasilnya" + skor;
