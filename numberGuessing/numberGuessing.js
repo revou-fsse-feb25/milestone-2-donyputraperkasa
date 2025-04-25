@@ -16,6 +16,7 @@ const maks = 5;
 let percobaan = 0;
 let angkaMu = document.getElementById("angkaMu");
 let kesempatan = 5;
+let hasil="";
 function cekAngka(){
     if (kesempatan > 0){
         kesempatan--;
@@ -23,21 +24,20 @@ function cekAngka(){
     } else {
         alert("gagal cuy angka yang benar itu = " + acakAngka)
     }
-    if (angkaMu.value<0){
-        alert("angkamu diluar range")
-    } else if (angkaMu.value>100){
+    
+    if (angkaMu.value < 0 || angkaMu.value > 100){
         alert("angkamu diluar range")
     }
+
     percobaan++;
     if (angkaMu.value == acakAngka){
-        alert("angkanya sama")
+        hasil = "angka mu sama"
     } else if (angkaMu.value > acakAngka){
-        alert("angkanya sama")
-    } else if (angkaMu.value > acakAngka){
-        alert("angka mu besar")
-    } else {
-        alert("angka mu kecil")
+        hasil = "angka mu besar"
+    } else if (angkaMu.value < acakAngka){
+        hasil = "angka mu kecil"
     }
+    document.getElementById("hasilnya").textContent = "angka yang benar itu = " + hasil;
 }
 if (percobaan == maks){
     alert(`gagal cuyy angka yang benar itu = ${acakAngka}`)
