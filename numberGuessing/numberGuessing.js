@@ -15,7 +15,14 @@ let acakAngka = Math.floor(Math.random()*101);
 const maks = 5;
 let percobaan = 0;
 let angkaMu = document.getElementById("angkaMu");
+let kesempatan = 5;
 function cekAngka(){
+    if (kesempatan > 0){
+        kesempatan--;
+        document.getElementById("sisaPercobaan").textContent = "sisa percobaan : " + kesempatan;
+    } else {
+        alert("gagal cuy angka yang benar itu = " + acakAngka)
+    }
     if (angkaMu.value<0){
         alert("angkamu diluar range")
     } else if (angkaMu.value>100){
@@ -30,9 +37,6 @@ function cekAngka(){
         alert("angka mu besar")
     } else {
         alert("angka mu kecil")
-    }
-    if (percobaan == maks){
-        alert("gagal cuy angka yang benar itu = " + acakAngka)
     }
 }
 if (percobaan == maks){
