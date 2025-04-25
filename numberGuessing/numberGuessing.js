@@ -21,8 +21,6 @@ function cekAngka(){
     if (kesempatan > 0){
         kesempatan--;
         document.getElementById("sisaPercobaan").textContent = "sisa percobaan : " + kesempatan;
-    } else {
-        alert("gagal cuy angka yang benar itu = " + acakAngka)
     }
     
     if (angkaMu.value < 0 || angkaMu.value > 100){
@@ -37,7 +35,7 @@ function cekAngka(){
     } else if (angkaMu.value < acakAngka){
         hasil = "angka mu kecil"
     }
-    document.getElementById("hasilnya").textContent = "angka yang benar itu = " + hasil;
+    document.getElementById("hasilnya").textContent = "angka yang benar itu = " + acakAngka;
 }
 if (percobaan == maks){
     alert(`gagal cuyy angka yang benar itu = ${acakAngka}`)
