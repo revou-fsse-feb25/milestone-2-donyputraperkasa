@@ -21,6 +21,8 @@ function cekAngka(){
     if (kesempatan > 0){
         kesempatan--;
         document.getElementById("sisaPercobaan").textContent = "sisa percobaan : " + kesempatan;
+    } else if (kesempatan == 0){
+        document.getElementById("hasilnya").textContent = "gagal cuyy angka yang benar itu = " + acakAngka;
     }
     
     if (angkaMu.value < 0 || angkaMu.value > 100){
@@ -37,7 +39,7 @@ function cekAngka(){
     }
     document.getElementById("note").textContent = "petunjuk : " + hasil;
 }
-if (percobaan == maks){
-    // alert(`gagal cuyy angka yang benar itu = ${acakAngka}`)
-    document.getElementById("hasilnya").textContent = "gagal cuyy angka yang benar itu = " + acakAngka;
-}
+// if (percobaan == maks){
+//     // alert(`gagal cuyy angka yang benar itu = ${acakAngka}`)
+//     document.getElementById("hasilnya").textContent = "gagal cuyy angka yang benar itu = " + acakAngka;
+// }
