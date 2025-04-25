@@ -51,5 +51,5 @@ function mulaiGame(player) {
         `;
     leaderboard.appendChild(baris);
     // alert(`aku =  ${playerChoice}\nKomputer = ${computerChoice}\nhasil = ${result}`);
+    document.getElementById("hasilnya").textContent="hasilnya" + skor;
 }
-document.getElementById("hasilnya").textContent="hasilnya" + skor;
