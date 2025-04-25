@@ -12,6 +12,7 @@ let timer;
 let waktuAwal = 10;
 let sisaWaktu = waktuAwal;
 let skor = document.getElementById("gameCost");
+let nomor =0;
 
 function hasilSkor(){
     skor.innerHTML = parseFloat(skor.innerHTML) + 1;
