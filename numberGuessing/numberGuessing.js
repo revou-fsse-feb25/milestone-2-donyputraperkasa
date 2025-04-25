@@ -35,7 +35,7 @@ function cekAngka(){
     } else if (angkaMu.value < acakAngka){
         hasil = "angka mu kecil"
     }
-    document.getElementById("hasilnya").textContent = "angka yang benar itu = " + hasil;
+    document.getElementById("note").textContent = "petunjuk : " + hasil;
 }
 if (percobaan == maks){
     // alert(`gagal cuyy angka yang benar itu = ${acakAngka}`)
